@@ -20,6 +20,9 @@ const DreamTravelagencylandingpagePage = () => {
   function handleBackNavigation1() {
     navigate(-1);
   }
+  function handleBackNavigation2() {
+    navigate(-1);
+  }
 
   return (
     <>
@@ -37,7 +40,8 @@ const DreamTravelagencylandingpagePage = () => {
                 <Row className="items-center w-[100%]">
                   <Img
                     src="images/img_logo.png"
-                    className="lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] w-[10%]"
+                    className="common-pointer lg:h-[19px] xl:h-[22px] 2xl:h-[25px] 3xl:h-[29px] w-[10%]"
+                    onClick={handleBackNavigation1}
                     alt="Logo"
                   />
                   <Text className="cursor-pointer hover:font-medium font-medium font-poppins lowercase lg:ml-[203px] xl:ml-[232px] 2xl:ml-[261px] 3xl:ml-[313px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px] 3xl:text-[16px] text-white_A700_e0 w-[auto]">
@@ -108,7 +112,7 @@ const DreamTravelagencylandingpagePage = () => {
                 </Row>
                 <Button
                   className="common-pointer font-normal lg:ml-[15px] xl:ml-[17px] 2xl:ml-[20px] 3xl:ml-[24px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] 3xl:text-[19px] text-center w-[20%]"
-                  onClick={handleBackNavigation1}
+                  onClick={handleBackNavigation2}
                   shape="RoundedBorder4"
                   size="lg"
                   variant="FillBlue400"
